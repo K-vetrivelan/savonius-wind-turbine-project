@@ -1,76 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Savonius Wind Turbine Project</title>
 
 <style>
+
 body{
-font-family: Arial;
-text-align:center;
-background:#f4f4f4;
+font-family: Arial, sans-serif;
 margin:0;
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#222;
-color:white;
-padding:20px;
+text-align:center;
+padding:40px;
+background:#1e293b;
 }
 
-section{
-padding:40px;
+h1{
+margin:0;
+font-size:40px;
+}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+padding:40px 0;
 }
 
 .card{
-background:white;
-padding:20px;
-margin:20px auto;
-width:60%;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+background:#1e293b;
+padding:25px;
+margin-bottom:30px;
 border-radius:10px;
 }
 
-button{
-padding:10px 20px;
-background:#0077ff;
+a.button{
+display:inline-block;
+padding:12px 20px;
+background:#3b82f6;
 color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
+text-decoration:none;
+border-radius:6px;
+margin-top:10px;
 }
+
+footer{
+text-align:center;
+padding:20px;
+background:#1e293b;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Experimental Investigation of 3D Printed Savonius Wind Turbine</h1>
-<p>Final Year Mechanical Engineering Project</p>
+<h1>Savonius Wind Turbine Project</h1>
+<p>Experimental Investigation of 3D Printed Savonius Wind Turbine</p>
 </header>
 
-<section>
+<div class="container">
 
 <div class="card">
 <h2>Project Overview</h2>
-<p>This project investigates the performance of a 3D printed Savonius wind turbine with different blade twist angles.</p>
+<p>
+This project investigates the performance of a 3D printed Savonius wind turbine
+with different blade twist configurations. The turbine blades were designed
+using CAD software and fabricated using PLA material through FDM 3D printing.
+</p>
 </div>
 
 <div class="card">
-<h2>3D Model</h2>
-<p>Interactive model viewer coming soon.</p>
+<h2>Design Files</h2>
+<p>Download the CAD models and design files used in this project.</p>
+<a class="button" href="#">Download Files</a>
 </div>
 
 <div class="card">
-<h2>Project Files</h2>
-<a href="#"><button>Download CAD Files</button></a>
+<h2>3D Model Preview</h2>
+<p>Interactive 3D model viewer will be added here.</p>
 </div>
 
 <div class="card">
-<h2>3D Printing Video</h2>
-<p>Printing demonstration available below.</p>
+<h2>Project Video</h2>
+<p>3D printing and turbine demonstration videos will be available here.</p>
 </div>
 
-</section>
+</div>
+
+<footer>
+<p>Final Year Mechanical Engineering Project</p>
+</footer>
 
 </body>
 </html>
