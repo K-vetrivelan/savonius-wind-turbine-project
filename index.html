@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Savonius Wind Turbine Project</title>
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -29,7 +31,7 @@ font-size:40px;
 
 .container{
 width:90%;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:40px 0;
 }
@@ -39,6 +41,7 @@ background:#1e293b;
 padding:25px;
 margin-bottom:30px;
 border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
 }
 
 model-viewer{
@@ -48,14 +51,29 @@ background:#111827;
 border-radius:10px;
 }
 
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+video{
+width:100%;
+border-radius:10px;
+}
+
 footer{
 text-align:center;
 padding:20px;
 background:#1e293b;
+margin-top:40px;
 }
 
 </style>
+
 </head>
+
 
 <body>
 
@@ -64,53 +82,100 @@ background:#1e293b;
 <p>Experimental Investigation of 3D Printed Savonius Wind Turbine</p>
 </header>
 
+
 <div class="container">
 
+
 <div class="card">
+
 <h2>Project Overview</h2>
+
 <p>
 This project investigates the performance of a 3D printed Savonius wind turbine
-with different blade twist configurations. The turbine blades were designed
-using CAD software and fabricated using PLA material through FDM 3D printing.
+with different blade twist configurations (0°, 5°, 10°, and 15°). The blades were
+designed using CAD software and fabricated using PLA material through FDM
+3D printing. The objective is to study how blade twist angle influences
+turbine performance.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h2>0° Blade Design</h2>
-<model-viewer src="o_deg_blade.glb" auto-rotate camera-controls></model-viewer>
+
+<model-viewer
+src="o_deg_blade.glb"
+auto-rotate
+camera-controls
+shadow-intensity="1"
+exposure="1">
+</model-viewer>
+
 </div>
 
+
 <div class="card">
+
 <h2>5° Blade Design</h2>
-<model-viewer src="5_deg_blade.glb" auto-rotate camera-controls></model-viewer>
+
+<model-viewer
+src="5_deg_blade.glb"
+auto-rotate
+camera-controls
+shadow-intensity="1"
+exposure="1">
+</model-viewer>
+
 </div>
 
+
 <div class="card">
+
 <h2>10° Blade Design</h2>
-<model-viewer src="10_deg_blade.glb" auto-rotate camera-controls></model-viewer>
+
+<model-viewer
+src="10_deg_blade.glb"
+auto-rotate
+camera-controls
+shadow-intensity="1"
+exposure="1">
+</model-viewer>
+
 </div>
 
+
 <div class="card">
+
 <h2>15° Blade Design</h2>
-<model-viewer src="15_deg_blade.glb" auto-rotate camera-controls></model-viewer>
+
+<model-viewer
+src="15_deg_blade.glb"
+auto-rotate
+camera-controls
+shadow-intensity="1"
+exposure="1">
+</model-viewer>
+
 </div>
 
+
 <div class="card">
+
 <h2>3D Printing Process</h2>
 
-<video controls loop width="100%">
+<div class="video-grid">
+
+<video controls loop>
 <source src="printing1.mp4" type="video/mp4">
 </video>
 
-<br><br>
-
-<video controls loop width="100%">
+<video controls loop>
 <source src="printing2.mp4" type="video/mp4">
 </video>
 
-<br><br>
-
-<video controls loop width="100%">
+<video controls loop>
 <source src="printing3.mp4" type="video/mp4">
 </video>
 
@@ -118,9 +183,17 @@ using CAD software and fabricated using PLA material through FDM 3D printing.
 
 </div>
 
+
+</div>
+
+
 <footer>
+
 <p>Final Year Mechanical Engineering Project</p>
+<p>Interactive project page created using GitHub Pages</p>
+
 </footer>
+
 
 </body>
 </html>
