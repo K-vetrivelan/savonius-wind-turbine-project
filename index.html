@@ -18,30 +18,30 @@
 <style>
   body {
     font-family: 'Inter', sans-serif;
-    background-color: #4B0082; /* Dark Amethyst */
-    color: #EDE7F6; /* Light text for contrast */
+    background-color: #2E0854; /* Dark Purple */
+    color: #E0D7F1; /* Light text for contrast */
   }
 
   header {
-    background: linear-gradient(135deg, #6A1B9A 0%, #4B0082 100%);
+    background: linear-gradient(135deg, #4B0D7C 0%, #2E0854 100%);
   }
 
   .card {
-    background-color: #5E2B9A; /* slightly lighter than background */
+    background-color: #3A0F7A; /* slightly lighter for contrast */
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     padding: 24px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
   }
 
   model-viewer {
     border-radius: 12px;
-    background: #6A1B9A; /* Dark amethyst background */
+    background: #4B0D7C; /* card-like background for 3D models */
   }
 
   select {
@@ -49,8 +49,8 @@
     padding: 10px;
     border: none;
     font-weight: 600;
-    background-color: #7B3FA2;
-    color: #EDE7F6;
+    background-color: #4B0D7C;
+    color: #E0D7F1;
     cursor: pointer;
   }
 
@@ -59,12 +59,8 @@
   }
 
   .accent {
-    color: #A45EE5; /* Amethyst highlight */
+    color: #A45EE5; /* Amethyst highlight for headers and roles */
     border-color: #A45EE5;
-  }
-
-  h2 {
-    border-left-width: 4px;
   }
 </style>
 </head>
@@ -133,29 +129,29 @@
   <section class="card">
     <h2 class="text-3xl font-semibold pl-4 mb-6 accent">Project Team</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div class="bg-[#7B3FA2] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
+      <div class="bg-[#4B0D7C] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
         <h3 class="text-xl font-bold mb-2">Vetrivelan K</h3>
         <div class="font-semibold accent mb-2">Designer</div>
         <p class="text-purple-100">Responsible for CAD modeling and turbine blade design.</p>
       </div>
-      <div class="bg-[#7B3FA2] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
+      <div class="bg-[#4B0D7C] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
         <h3 class="text-xl font-bold mb-2">Sanjiv CS</h3>
         <div class="font-semibold accent mb-2">Research & Development</div>
         <p class="text-purple-100">Focused on research analysis and design improvement concepts.</p>
       </div>
-      <div class="bg-[#7B3FA2] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
+      <div class="bg-[#4B0D7C] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
         <h3 class="text-xl font-bold mb-2">Altha Fullah S</h3>
         <div class="font-semibold accent mb-2">Industrial Coordination</div>
         <p class="text-purple-100">Handled fabrication coordination and project execution support.</p>
       </div>
-      <div class="bg-[#7B3FA2] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
+      <div class="bg-[#4B0D7C] p-6 rounded-lg text-center shadow hover:scale-105 transition-transform">
         <h3 class="text-xl font-bold mb-2">Karthik S</h3>
         <div class="font-semibold accent mb-2">Batch Member</div>
         <p class="text-purple-100">Member of the project team involved in overall coordination.</p>
       </div>
     </div>
 
-    <div class="bg-[#7B3FA2] rounded-lg p-6 text-center shadow mt-8">
+    <div class="bg-[#4B0D7C] rounded-lg p-6 text-center shadow mt-8">
       <h3 class="text-xl font-bold mb-2">Project Guide</h3>
       <p class="font-semibold accent mb-2">Mr. M. Prakash</p>
       <p class="text-purple-100 mb-2">Lecturer – Department of Mechanical Engineering</p>
